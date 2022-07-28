@@ -1,0 +1,22 @@
+@media (max-width: 500px) {
+  .container {
+    background-size: cover;
+  }
+
+  .container--jokes {
+    margin-bottom: 35%;
+    gap: 15%;
+
+    height: 50%;
+    width: 90%;
+  }
+
+  .delivery {
+    font-size: 30px;
+  }
+
+  .container--btn {
+    position: fixed;
+    bottom: 30%;
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "GB Game": {
+    "title": "GB Game",
+    "img": {
+      "src": "src/img/projects/GB.png",
+      "alt": "GB-Game"
+    },
+
+    "intro": {
+      "text": "This is my passion project. My sandbox where I can push my skills to the limit and learn game development skills.",
+      "link": "projects/GB-project/index.html"
+    },
+
+    "description": {
+      "stack": "HTML, HTML5 Canvas, CSS, JavaScript",
+      "version": "0.1"
+    },
+    "implemented": {
+      "feature-one": {
+        "title": "Base Game",
+        "items": ["Player movement", "HP/MP system"]
+      },
+      "feature-two": {
+        "title": "Environment",
+        "items": ["Destroyable obstacles", "Vertical scrolling"]
+      }
+    },
+
+    "toImplement": {
+      "feature-one": {
+        "title": "Base Game",
+        "items": ["General graphics improvement", "EXP system", "Player skills"]
+      },
+      "feature-two": {
+        "title": "Environment",
+        "items": [
+          "Destroyable obstacles improvement",
+          "Vertical scrolling system improvement"
+        ]
+      }
+    }
+  },
+
+  "cocktail-app": {
+    "title": "Cocktail search app",
+    "img": {
+      "src": "src/img/apps/cocktail.png",
+      "alt": "Cocktail app"
+    },
+
+    "intro": {
+      "text": "Search for your favorite cocktail, get the ingredients and enjoy your home-made refreshment",
+      "link": "apps/cocktail-app/index.html"
+    },
+
+    "description": {
+      "stack": "HTML, CSS, JavaScript",
+      "version": "0.1"
+    },
+    "implemented": {
+      "feature-one": {
+        "title": "Search function",
+        "items": ["Search by name"]
+      },
+      "feature-two": {
+        "title": "Cocktail search API",
+        "items": ["https://www.thecocktaildb.com/"]
+      }
+    },
+
+    "toImplement": {
+      "feature-one": {
+        "title": "Search function",
+        "items": ["Search by ingredient"]
+      },
+      "feature-two": {
+        "title": "Mobile",
+        "items": ["Mobile optimization"]
+      }
+    }
+  },
+
+  "todo-list": {
+    "title": "Todo List",
+    "img": {
+      "src": "src/img/projects/todo-list.png",
+      "alt": "To-do List"
+    },
+
+    "intro": {
+      "text": "This is my largest front-end project so far. it features ES6 classes, object manipulation and state management.",
+      "link": "projects/to-do-list/index.html"
+    },
+
+    "description": {
+      "stack": "HTML, CSS, JavaScript",
+      "version": "0.2"
+    },
+
+    "implemented": {
+      "feature-one": {
+        "title": "Todo List",
+        "items": ["Add and remove Todo tasks."]
+      },
+      "feature-two": {
+        "title": "Calendar",
+        "items": [
+          "Basic functionality",
+          "Date Selection",
+          "Visual feedback on busy day",
+          "List of tasks on selected day"
+        ]
+      },
+      "feature-three": {
+        "title": "Project List",
+        "items": ["Add new project", "Rename and delete project"]
+      }
+    },
+
+    "toImplement": {
+      "feature-one": {
+        "title": "Todo List",
+        "items": ["Modify todo task.", "Add end date."]
+      },
+      "feature-two": {
+        "title": "Calendar",
+        "items": ["Improve graphic design"]
+      },
+      "feature-three": {
+        "title": "Project List",
+        "items": ["Add sub-project lists"]
+      }
+    }
+  },
+
+  "christmas-jokes": {
+    "title": "Christmas Jokes",
+    "img": {
+      "src": "src/img/projects/christmas-jokes.jpg",
+      "alt": "Christmas Jokes"
+    },
+
+    "intro": {
+      "text": "This is a simple and quick project I built for fun and to test my knowledge of asyncronous JavaScript and API data fetching.",
+      "link": "projects/christmas-jokes/index.html"
+    },
+
+    "description": {
+      "stack": "HTML, CSS, JavaScript",
+      "version": "1.0"
+    },
+
+    "implemented": {
+      "feature-one": {
+        "title": "Button",
+        "items": ["Click the button to get a joke"]
+      }
+    },
+
+    "toImplement": {
+      "feature-one": {
+        "title": "Project completed",
+        "items": ["-"]
+      }
+    }
+  }
+}

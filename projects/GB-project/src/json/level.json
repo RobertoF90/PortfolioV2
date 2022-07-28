@@ -1,0 +1,58 @@
+{
+  "level1": {
+    "enemies": [
+      {
+        "type": "easy",
+        "number": 7,
+        "src": "src/img/en1-sheet.png"
+      }
+    ],
+    "scenes": {
+      "stage": [{ "text": "Wave 1" }, { "text": "Get ready!" }],
+      "win": [
+        {
+          "text": "You Win"
+        },
+        {
+          "text": "Congratulations!"
+        }
+      ],
+      "lose": [
+        {
+          "text": "You Lose"
+        }
+      ]
+    }
+  },
+
+  "level2": {
+    "enemies": [
+      {
+        "type": "easy",
+        "number": 3,
+        "src": "src/img/en1-sheet.png"
+      },
+      {
+        "type": "normal",
+        "number": 7,
+        "src": "src/img/en2-sheet.png"
+      }
+    ],
+    "scenes": {
+      "stage": [{ "text": "Wave 2" }, { "text": "You are doing great!" }],
+      "win": [
+        {
+          "text": "You Win"
+        },
+        {
+          "text": "Congratulations!"
+        }
+      ],
+      "lose": [
+        {
+          "text": "You Lose"
+        }
+      ]
+    }
+  }
+}

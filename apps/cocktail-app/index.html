@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is where your description goes" />
+    <meta name="keywords" content="one, two, three" />
+
+    <title>Cocktail App</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-P62R9PPFYC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-P62R9PPFYC');
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__top">
+        <input type="text" name="" value="" />
+        <button type="button" name="button">Get Cocktail</button>
+      </div>
+      <div class="container__drinks"></div>
+      <div class="container__cocktail">
+        <p class="intro">Start by searching for a cocktail!</p>
+        <img class="cocktail__img" src="" alt="" />
+        <p class="cocktail__name hidden"></p>
+        <div class="cocktail__ingredients"></div>
+        <div class="cocktail__instructions"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

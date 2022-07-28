@@ -1,0 +1,217 @@
+/* 
+#132a13
+#31572c
+#4f772d
+#90a955
+#ecf39e 
+*/
+
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+button:active {
+}
+
+button:hover {
+  cursor: pointer;
+
+  transform: scale(1.05);
+}
+
+h1 {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+
+body {
+  background: linear-gradient(to bottom right, #90a955, #31572c);
+
+  font-family: sans-serif;
+}
+
+.container {
+  background: #fff;
+
+  margin: 2rem;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 25fr 75fr;
+
+  box-shadow: 0 2rem 6rem 0.5rem rgba(97, 85, 81, 0.2);
+}
+
+.container__top {
+  background: #f9f5f3;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  padding: 1rem 0;
+
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.container__top input {
+  border: none;
+  border-radius: 18px;
+  padding: 0.5rem 1.5rem;
+
+  outline: none;
+}
+
+.container__top button {
+  background: linear-gradient(to bottom right, #31572c, #90a955);
+  color: #eee;
+  padding: 0.5rem 1.5rem;
+  position: relative;
+  right: 5%;
+  border: none;
+  border-radius: 18px;
+
+  transition: all 0.1s;
+}
+
+.container__drinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.drink {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.drink:hover {
+  cursor: pointer;
+  background: #f9f5f3;
+}
+
+.drink img {
+  border-radius: 50%;
+}
+
+.container__cocktail {
+  padding: 2rem 0;
+
+  background: #f9f5f3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cocktail__name {
+  position: relative;
+  bottom: 2%;
+
+  padding: 0.5rem 1rem;
+
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  background: linear-gradient(to bottom right, #31572c, #90a955);
+  color: #eee;
+}
+
+.cocktail__img {
+  height: 15rem;
+}
+
+.cocktail__ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 1.2rem;
+
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+
+  background: #f2efee;
+
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.ingredients__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  color: #90a955;
+}
+
+.ingredients__container {
+  display: flex;
+  gap: 1rem;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.ingredients__title {
+  flex: 100%;
+}
+
+.ingredient {
+  font-weight: 500;
+}
+
+.measure {
+  font-size: 0.8rem;
+}
+
+.cocktail__instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 0 4rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+h3 {
+  width: 75%;
+}
+
+.container__drinks img {
+  height: 50px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.hidden {
+  display: none;
+}

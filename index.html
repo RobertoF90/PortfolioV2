@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Roberto, Franco, Software, Engineer, Web, Full-stack, front-end, back-end, Developer"
+    />
+    <meta
+      name="description"
+      content="Web Developer based in Lecce, Puglia, Italy"
+    />
+    <title>Roberto Franco | Software Engineer</title>
+
+    <link rel="stylesheet" href="src/css/general.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/queries.css" />
+
+    <link rel="stylesheet" href="src/css/projects.css" />
+
+    <script defer src="src/js/script.js"></script>
+    <script defer src="src/js/projects.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-P62R9PPFYC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-P62R9PPFYC');
+    </script> -->
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__link nav__link--home">
+          <a href="#" data-id="home" class="nav__btn btn active"> Home </a>
+        </div>
+        <ul class="nav__links">
+          <li class="nav__link">
+            <a class="nav__btn btn" data-id="projects" href="#"> Projects </a>
+          </li>
+          <li class="nav__link">
+            <a class="nav__btn btn btn--cta" data-id="cta" href="#">
+              Get in touch
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="go-to-top hidden">&uarr;</div>
+
+      <section class="section section__home" data-id="home">
+        <div class="home__container">
+          <div class="home__img-box">
+            <img class="img-box__img" src="/src/img/profile picture.jpeg" />
+          </div>
+
+          <div class="home__text-box">
+            <h1 class="text-box__name">Roberto Franco</h1>
+            <h2 class="text-box__heading">Software Engineer</h2>
+            <p class="text-box__para">
+              I'm a Full-Stack developer based in Lecce (Italy) working remotely
+              to help your business grow. I'm open to freelance work feel free
+              to get in touch!
+            </p>
+            <div class="social-icons">
+              <a href="https://github.com/RobertoF90" target="_blank">
+                <img
+                  title="GitHub"
+                  class="social-icon"
+                  src="src/img/icons/social/github.svg"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://twitter.com/RFrancoDev" target="_blank">
+                <img
+                  title="Twitter"
+                  class="social-icon"
+                  src="src/img/icons/social/twitter.svg"
+                  alt=""
+                />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/roberto-franco-2bb321116/"
+                target="_blank"
+              >
+                <img
+                  title="LinkedIn"
+                  class="social-icon"
+                  src="src/img/icons/social/linkedin.svg"
+                  alt=""
+                />
+              </a>
+
+              <a
+                href="https://www.instagram.com/roberto.franco.dev/"
+                target="_blank"
+              >
+                <img
+                  title="Instagram"
+                  class="social-icon"
+                  src="src/img/icons/social/instagram.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <h1 class="home__heading">Skills</h1>
+
+          <div class="home__icons">
+            <img
+              title="HTML5"
+              class="home__icons--icon"
+              src="src/img/icons/html-5.svg"
+            />
+            <img
+              title="CSS3"
+              class="home__icons--icon"
+              src="src/img/icons/css-3.svg"
+            />
+            <img
+              title="Sass"
+              class="home__icons--icon"
+              src="src/img/icons/sass.svg"
+            />
+            <img
+              title="JavaScript"
+              class="home__icons--icon"
+              src="src/img/icons/javascript.svg"
+            />
+            <img
+              title="NodeJS"
+              class="home__icons--icon"
+              src="src/img/icons/nodejs-icon.svg"
+            />
+
+            <img
+              title="Express"
+              class="home__icons--icon"
+              src="src/img/icons/express.svg"
+            />
+
+            <img
+              title="MongoDB"
+              class="home__icons--icon"
+              src="src/img/icons/mongodb.svg"
+            />
+            <img
+              title="Postman"
+              class="home__icons--icon"
+              src="src/img/icons/postman.svg"
+            />
+            <img
+              title="Pug"
+              class="home__icons--icon"
+              src="src/img/icons/pugjs.svg"
+            />
+            <img
+              title="Git"
+              class="home__icons--icon"
+              src="src/img/icons/git.svg"
+            />
+          </div>
+        </div>
+
+        <div class="latest__work">
+          <h1 class="home__heading">Latest Works</h1>
+
+          <div class="work__cards">
+            <div class="latest__card">
+              <a href="apps/cocktail-app/index.html" target="_blank">
+                <img
+                  class="latest__card--img"
+                  src="src/img/apps/cocktail.png"
+                  alt="Cocktail Searching App"
+                />
+                <p class="latest__card--text">Cocktail Searching App</p>
+              </a>
+            </div>
+
+            <div class="latest__card">
+              <a href="apps/100devs-calculator/index.html" target="_blank">
+                <img
+                  class="latest__card--img"
+                  src="src/img/apps/Calculator.png"
+                  alt="Calculator App"
+                />
+                <p class="latest__card--text">Simple Calculator App</p>
+              </a>
+            </div>
+
+            <div class="latest__card">
+              <a href="https://filomenalok.netlify.app/" target="_blank">
+                <img
+                  class="latest__card--img"
+                  src="./src/img/websites/filomena landing.jpg"
+                />
+                <p class="latest__card--text">
+                  Italian landing page website. Go check it out!
+                </p>
+              </a>
+            </div>
+
+            <div class="latest__card">
+              <a href="/projects/to-do-list/index.html" target="_blank">
+                <img
+                  class="latest__card--img"
+                  src="./src/img/projects/todo-list.png"
+                />
+                <p class="latest__card--text">
+                  To-do app: Check out my latest work-in-progress project!
+                </p>
+              </a>
+            </div>
+
+            <div class="latest__card">
+              <a href="/projects/GB-project/index.html" target="_blank">
+                <img
+                  class="latest__card--img"
+                  src="./src/img/projects/GB.png"
+                />
+                <p class="latest__card--text">
+                  My little game made made with HTML5 Canvas and JavaScript!
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section__projects hidden" data-id="projects">
+        <div class="container__projects">
+          <div class="container__projects--showcase">
+            <h2 class="project__showcase--title">Project Title</h2>
+
+            <div class="showcase__project">
+              <div class="project__intro">
+                <p class="project__intro--text">HELLO I'm the project</p>
+                <div>
+                  <a class="project__intro--link" href="#">Link to Project</a>
+                </div>
+                <span> Stack: </span>
+                <p class="project__intro--stack">
+                  HTML, HTML5 Canvas, CSS, JavaScript
+                </p>
+                <span> Version:</span>
+                <p class="project__intro--version">0.1</p>
+              </div>
+
+              <div class="project__img--zoomed">
+                <img class="zoomed__img" />
+              </div>
+            </div>
+
+            <!-- IMPLEMENTED FEATURES  -->
+
+            <div class="features__container">
+              <h3>Features implemented:</h3>
+              <div class="implemented-features__lists"></div>
+            </div>
+
+            <!-- FEATURES TO IMPLEMENT -->
+
+            <div class="features__container">
+              <h3>Work-in-progress Features:</h3>
+              <div class="to-implement-features__lists"></div>
+            </div>
+
+            <p class="feedback">Do you want to provide any feedback?</p>
+            <p class="feedback">
+              Please feel free to contact me on any social platform or through
+              the form below!
+            </p>
+          </div>
+
+          <div class="project__card-container"></div>
+        </div>
+      </section>
+    </main>
+
+    <section class="section__cta" id="cta">
+      <div class="container container__cta">
+        <h3 class="cta__heading">Get in touch!</h3>
+        <p class="cta__text">Let's work together on a project!</p>
+        <form
+          class="cta__form"
+          action="https://formsubmit.co/robertofranco8090@gmail.com"
+          method="post"
+        >
+          <div class="cta__form--items">
+            <div class="cta__form--item">
+              <label for="full-name">Full Name</label>
+              <input
+                id="full-name"
+                type="text"
+                placeholder="John Smith"
+                name="full-name"
+                required
+              />
+            </div>
+
+            <div class="cta__form--item">
+              <label for="email">Email Address</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="me@example.com"
+                name="email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form--textarea">
+            <label for="message">Message</label>
+            <textarea
+              class="textarea"
+              rows="10"
+              columns="10"
+              placeholder="Write your message here..."
+              name="message"
+            >
+            </textarea>
+          </div>
+          <input
+            type="hidden"
+            name="_subject"
+            value="New submission from form!"
+          />
+          <div class="form--cta">
+            <button type="submit" class="form--btn btn btn--cta">Send!</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="copyright">&copy; 2022 Roberto Franco</p>
+      <div class="social-links">
+        <a
+          href="https://github.com/RobertoF90"
+          class="btn--cta social-link"
+          target="_blank"
+          >GitHub</a
+        >
+        <a
+          href="https://www.instagram.com/roberto.franco.dev/"
+          class="btn--cta social-link"
+          target="_blank"
+          >Instagram</a
+        >
+        <a
+          href="https://twitter.com/RFrancoDev"
+          class="btn--cta social-link"
+          target="_blank"
+          >Twitter</a
+        >
+        <a
+          href="https://www.linkedin.com/in/roberto-franco-2bb321116/"
+          class="btn--cta social-link"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
