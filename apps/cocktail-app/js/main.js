@@ -1,6 +1,6 @@
-//Example fetch using pokemonapi.co
 document.querySelector('button').addEventListener('click', getFetch);
 drinkContainer = document.querySelector('.container__drinks');
+containerApp = document.querySelector('.container');
 
 const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
 
@@ -93,3 +93,15 @@ function getFetch() {
       console.log(`error ${err}`);
     });
 }
+
+const hideDrinksBtn = document.querySelector('.container__drinks--btn');
+
+function hideDrinks(e) {
+  drinkContainer.classList.toggle('active');
+  containerApp.classList.toggle('active');
+  hideDrinksBtn.classList.toggle('active');
+}
+
+hideDrinksBtn.addEventListener('click', hideDrinks);
+
+console.log(hideDrinksBtn);

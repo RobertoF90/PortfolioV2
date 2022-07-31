@@ -6,56 +6,47 @@
 #ecf39e 
 */
 
-/******************************************
-/* CSS
-/*******************************************/
-
-/* Box Model Hack */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
-
-button:active {
-}
-
-button:hover {
-  cursor: pointer;
-
-  transform: scale(1.05);
-}
-
-h1 {
-  margin: 0.5rem;
-  font-size: 1.5rem;
+html {
+  font-size: 62.5%;
 }
 
 body {
   background: linear-gradient(to bottom right, #90a955, #31572c);
 
   font-family: sans-serif;
+
+  height: 100vh;
 }
 
 .container {
+  height: 90vh;
+  width: 90vw;
+
   background: #fff;
 
-  margin: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   border-radius: 12px;
   display: grid;
   grid-template-columns: 25fr 75fr;
 
   box-shadow: 0 2rem 6rem 0.5rem rgba(97, 85, 81, 0.2);
+
+  overflow: hidden;
 }
 
 .container__top {
-  background: #f9f5f3;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  height: 10vh;
+  background: #eae4e2;
 
   padding: 1rem 0;
 
@@ -63,6 +54,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: 2.8rem;
 
   gap: 2rem;
 }
@@ -87,21 +80,30 @@ body {
   transition: all 0.1s;
 }
 
+cocktail--btn:hover {
+  cursor: pointer;
+
+  transform: scale(1.05);
+}
+
 .container__drinks {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+  font-size: 2.8rem;
+  overflow: scroll;
 }
 
 .drink {
+  gap: 3rem;
   display: flex;
-  gap: 1rem;
   align-items: center;
   padding: 0.5rem 1rem;
 }
 
 .drink:hover {
   cursor: pointer;
-  background: #f9f5f3;
+  background: #eae4e2;
 }
 
 .drink img {
@@ -111,7 +113,7 @@ body {
 .container__cocktail {
   padding: 2rem 0;
 
-  background: #f9f5f3;
+  background: #eae4e2;
 
   display: flex;
   flex-direction: column;
@@ -124,7 +126,7 @@ body {
 
   padding: 0.5rem 1rem;
 
-  font-size: 1.8rem;
+  font-size: 3.6rem;
   text-transform: uppercase;
   font-weight: 700;
 
@@ -133,7 +135,7 @@ body {
 }
 
 .cocktail__img {
-  height: 15rem;
+  height: 30vh;
 }
 
 .cocktail__ingredients {
@@ -143,21 +145,21 @@ body {
 
   justify-content: center;
 
-  font-size: 1.2rem;
+  font-size: 2.4rem;
 
   gap: 1rem;
 
   margin-bottom: 1rem;
   padding: 0 1rem;
 
-  background: #f2efee;
+  background: #d6d3d1;
 
   width: 100%;
   padding: 1rem 0;
 }
 
 .ingredients__title {
-  font-size: 1.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
 
   color: #90a955;
@@ -185,7 +187,7 @@ body {
 }
 
 .measure {
-  font-size: 0.8rem;
+  font-size: 1.6rem;
 }
 
 .cocktail__instructions {
@@ -196,8 +198,10 @@ body {
   gap: 1rem;
 
   padding: 0 4rem;
-  font-size: 1.2rem;
+  font-size: 2.4rem;
   line-height: 1.5;
+
+  overflow: scroll;
 }
 
 h3 {
@@ -206,6 +210,10 @@ h3 {
 
 .container__drinks img {
   height: 50px;
+}
+
+.intro {
+  font-size: 2.4rem;
 }
 
 /******************************************
