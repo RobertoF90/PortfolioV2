@@ -1,9 +1,29 @@
 :root {
   --main: #104ba9;
   --bg: #9ec0f6;
+  --bg-section: #a8c6f7;
   --btn-bg: #84a6dc;
   --btn: #3e68ab;
   --cta: #035ff0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  background-color: #ddd;
+}
+
+main {
 }
 
 /****************/
@@ -14,51 +34,75 @@
   /* height: 80vh; */
 }
 
+/* NAVIGATION */
+
+.nav {
+  padding: 1.6rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+  font-size: 3.2rem;
+  font-weight: 700;
+
+  box-shadow: 0 1px 5px #888;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  list-style: none;
+}
+
+.nav__link--home {
+  margin-right: auto;
+}
+
 /****************/
-/* home  */
+/* MAIN  */
 /****************/
 
 .home__container {
-  margin: 4rem 4rem;
+  margin: 2rem;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.home__text-box {
-  color: #333;
-
-  width: 40rem;
-}
-
 .home__img-box {
-  display: flex;
-  max-width: 20rem;
-  padding: 0 1rem;
+  max-width: 17.5vw;
 }
 
 .img-box__img {
-  border: 1px solid var(--main);
   box-shadow: #383f49 3px 3px 3px;
   width: 100%;
 }
 
+.home__text-box {
+  color: #333;
+
+  width: 35vw;
+}
+
 .text-box__name {
-  font-size: 4.4rem;
+  font-size: 6.4rem;
   font-weight: 700;
   letter-spacing: 1.8px;
 }
 
 .text-box__heading {
-  font-size: 4rem;
+  font-size: 5.2rem;
   font-weight: 500;
   line-height: 1.6;
+  margin-bottom: 5.2rem;
 }
 
 .text-box__para {
-  font-size: 2rem;
+  font-size: 3.6rem;
   line-height: 1.5;
+  margin-bottom: 5.2rem;
 }
 
 .social-icons {
@@ -68,32 +112,28 @@
 }
 
 .social-icon {
-  height: 3.5rem;
+  height: 6rem;
+}
+
+.home__heading {
+  text-align: center;
+  font-size: 5.2rem;
 }
 
 .home__icons:first-of-type {
-  margin-top: 5rem;
+  margin-top: 3.2rem;
 }
 
 .home__icons {
   margin: 4rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  /* width: 30rem; */
-  height: 7.5rem;
-
-  grid-column: span 2;
-}
-
-.home__heading {
-  text-align: center;
-  font-size: 3rem;
-  padding-top: 2rem;
+  gap: 4.2rem;
+  height: 10rem;
 }
 
 .work__cards {
-  margin: 4rem;
+  margin: 4.8rem 0;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -109,13 +149,12 @@
 
 .latest__card {
   position: relative;
-  margin: 1rem 0;
+  margin: 3rem 0;
 
   display: flex;
   flex-direction: column;
 
-  /* height: 20rem; */
-  width: 32rem;
+  width: 30vw;
 }
 
 .latest__card::after {
@@ -129,7 +168,7 @@ a img {
 
 .latest__card--text {
   padding: 0.2rem 1rem;
-  font-size: 1.5rem;
+  font-size: 2.8rem;
   text-align: center;
   color: #fff;
   position: absolute;
@@ -150,7 +189,7 @@ a img {
   z-index: 0;
   transition: all 0.5s;
   opacity: 1;
-  height: 50%;
+  height: 45%;
 }
 
 @keyframes appear {
@@ -177,13 +216,6 @@ a img {
   transition: all 0.5s;
 }
 
-.section__home {
-  /* display: grid;
-  grid-template-columns: 25fr 75fr;
-  align-items: center;
-  justify-items: center; */
-}
-
 .section__heading {
   text-align: center;
   font-size: 4.8rem;
@@ -195,7 +227,7 @@ a img {
 /****************/
 
 .section__cta {
-  padding: 3.2rem 6.4rem;
+  margin-bottom: 6rem;
 }
 
 .container__cta {
@@ -204,18 +236,11 @@ a img {
 }
 
 .cta__heading {
-  font-size: 4.4rem;
+  font-size: 6.4rem;
 }
 
 .cta__text {
-  font-size: 3.6rem;
-}
-
-.cta__btns {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 6.4rem 0;
+  font-size: 5.2rem;
 }
 
 .cta__form {
@@ -226,7 +251,7 @@ a img {
   gap: 3.2rem;
   flex-wrap: wrap;
 
-  font-size: 2rem;
+  font-size: 3.6rem;
 }
 
 .cta__form--items {
@@ -241,16 +266,26 @@ a img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 66%;
+}
+
+.cta__form--item input {
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
 }
 
 .form--textarea {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 55%;
 }
 
 .textarea {
+  padding: 1rem;
+
+  border: none;
+  font-size: 2rem;
   margin-top: 1.2rem;
   margin-bottom: -1.2rem;
 }
@@ -279,8 +314,35 @@ a img {
   width: 100%;
 }
 
-.feedback {
-  margin: 1rem 0;
-  text-align: center;
-  font-size: 1.8rem;
+/****************/
+/* FOOTER */
+/****************/
+
+.footer {
+  padding: 1.6rem;
+
+  font-size: 3.2rem;
+
+  box-shadow: 0 -1px 5px #888;
+
+  /* text-align: center; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.copyright {
+  color: rgba(85, 85, 85, 0.7);
+}
+
+.social-links {
+  font-weight: 700;
+}
+
+.social-link {
+  margin-left: 3.2rem;
+  text-decoration: none;
+  color: #135089;
 }

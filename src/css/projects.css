@@ -7,29 +7,31 @@
 
   animation: appear 0.5s;
   transition: all 0.5s;
+
+  margin-bottom: 6rem;
 }
 
 .container__projects--showcase {
-  margin: 0 3rem;
+  margin: 0 1rem;
 }
 
 .project__showcase--title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 6.4rem;
   margin: 2rem 0;
 }
 
 .showcase__project {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 40fr 60fr;
+  column-gap: 4rem;
 
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 3.2rem;
 }
 
 .project__img--zoomed {
   justify-self: center;
-  margin: 0 2rem;
 }
 
 .zoomed__img {
@@ -39,7 +41,6 @@
 
 .project__intro {
   height: 100%;
-  padding: 1rem 2rem;
   margin: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -48,7 +49,6 @@
 
 .project__intro--link {
   text-decoration: none;
-  font-size: 2rem;
   font-weight: 700;
   color: var(--main);
 }
@@ -97,7 +97,7 @@
 
 .features__container {
   width: 100%;
-  margin: 2rem;
+  padding: 4rem 2rem;
 }
 
 .implemented-features__lists,
@@ -109,7 +109,7 @@
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 4.2rem;
 }
 
 .feature {
@@ -118,7 +118,7 @@ h3 {
 
 .feature__title {
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 3.6rem;
 }
 
 .feature__list {
@@ -128,5 +128,15 @@ h3 {
 .feature__list--item {
   list-style: none;
   padding: 0.5rem 0;
-  font-size: 1.6rem;
+  font-size: 2.8rem;
+}
+
+.feedback {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+.feedback:last-of-type {
+  margin-bottom: 8rem;
 }
