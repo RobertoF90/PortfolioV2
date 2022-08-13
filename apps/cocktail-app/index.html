@@ -4,11 +4,12 @@
     <meta charset="utf-8" />
     <meta name="description" content="This is where your description goes" />
     <meta name="keywords" content="one, two, three" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
     <title>Cocktail App</title>
 
     <!-- external CSS link -->
-    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
@@ -36,12 +37,14 @@
         </button>
       </div>
       <div class="container__drinks"></div>
-      <button class="container__drinks--btn hidden">&lang;</button>
+      <button class="container__drinks--btn hidden">
+        <span> &lang; </span>
+      </button>
       <div class="container__cocktail">
         <p class="intro">Start by searching for a cocktail!</p>
         <img class="cocktail__img" src="" alt="" />
         <p class="cocktail__name hidden"></p>
-        <div class="cocktail__ingredients"></div>
+        <div class="cocktail__ingredients hidden"></div>
         <div class="cocktail__instructions"></div>
       </div>
     </div>

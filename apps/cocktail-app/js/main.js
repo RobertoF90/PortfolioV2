@@ -13,10 +13,15 @@ function getDrink(e) {
       const { drinks } = data;
       const drink = drinks[0];
 
-      document.querySelector('.hidden').classList.remove('hidden');
+      if (window.innerWidth < 700) {
+        document
+          .querySelector('.container__drinks--btn')
+          .classList.remove('hidden');
+      }
 
       document.querySelector('.intro').classList.add('hidden');
 
+      document.querySelector('.cocktail__name').classList.remove('hidden');
       document.querySelector('.cocktail__name').innerText = drink.strDrink;
 
       document.querySelector('.cocktail__img').src = drink.strDrinkThumb;
@@ -34,6 +39,9 @@ function getDrink(e) {
           break;
         }
       }
+      document
+        .querySelector('.cocktail__ingredients')
+        .classList.remove('hidden');
 
       document.querySelector('.cocktail__ingredients').innerHTML = `
       <p class="ingredients__title">Cocktail Ingredients</p>
@@ -96,12 +104,10 @@ function getFetch() {
 
 const hideDrinksBtn = document.querySelector('.container__drinks--btn');
 
-function hideDrinks(e) {
+function hideDrinks() {
   drinkContainer.classList.toggle('active');
   containerApp.classList.toggle('active');
   hideDrinksBtn.classList.toggle('active');
 }
 
 hideDrinksBtn.addEventListener('click', hideDrinks);
-
-console.log(hideDrinksBtn);
