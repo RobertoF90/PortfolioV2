@@ -12,7 +12,6 @@
       name="description"
       content="Web Developer based in Lecce, Puglia, Italy"
     />
-    <title>Roberto Franco | Software Engineer</title>
 
     <link rel="stylesheet" href="src/css/general.css" />
     <link rel="stylesheet" href="src/css/style.css" />
@@ -30,20 +29,7 @@
       rel="stylesheet"
     />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-P62R9PPFYC"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-P62R9PPFYC');
-    </script> -->
+    <title>Roberto Franco | Software Engineer</title>
   </head>
   <body>
     <header class="header">
@@ -146,9 +132,19 @@
               src="src/img/icons/sass.svg"
             />
             <img
+              title="Bootstrap"
+              class="home__icons--icon"
+              src="src/img/icons/bootstrap.svg"
+            />
+            <img
               title="JavaScript"
               class="home__icons--icon"
               src="src/img/icons/javascript.svg"
+            />
+            <img
+              title="ReactJS"
+              class="home__icons--icon"
+              src="src/img/icons/react.svg"
             />
             <img
               title="NodeJS"
@@ -168,16 +164,6 @@
               src="src/img/icons/mongodb.svg"
             />
             <img
-              title="Postman"
-              class="home__icons--icon"
-              src="src/img/icons/postman.svg"
-            />
-            <img
-              title="Pug"
-              class="home__icons--icon"
-              src="src/img/icons/pugjs.svg"
-            />
-            <img
               title="Git"
               class="home__icons--icon"
               src="src/img/icons/git.svg"
@@ -187,27 +173,61 @@
 
         <div class="latest__work">
           <h1 class="home__heading">Latest Works</h1>
-
           <div class="work__cards">
             <div class="latest__card">
-              <a href="apps/cocktail-app/index.html" target="_blank">
+              <a
+                href="https://robertofranco-rick-morty-search-app.netlify.app/"
+                target="_blank"
+              >
+                <img
+                  class="latest__card--img"
+                  src="./src/img/apps/rick-morty.png"
+                />
+                <p class="latest__card--text">Rick & Morty Search React App</p>
+              </a>
+            </div>
+
+            <div class="latest__card">
+              <a
+                href="https://robertofranco-cuisine-restaurant.netlify.app/"
+                target="_blank"
+              >
+                <img
+                  class="latest__card--img"
+                  src="src/img/websites/cuisine restaurant.png"
+                  alt="Cuisine Restaurant"
+                />
+                <p class="latest__card--text">Cuisine Restaurant website</p>
+              </a>
+            </div>
+
+            <div class="latest__card">
+              <a
+                href="https://robertofranco-nasa-apod.netlify.app/"
+                target="_blank"
+              >
+                <img
+                  class="latest__card--img"
+                  src="src/img/apps/nasa-apod.png"
+                  alt="NASA APOD App"
+                />
+                <p class="latest__card--text">
+                  NASA Astronomy Picture of the Day
+                </p>
+              </a>
+            </div>
+
+            <div class="latest__card">
+              <a
+                href="https://robertofranco-cocktailapp.netlify.app/"
+                target="_blank"
+              >
                 <img
                   class="latest__card--img"
                   src="src/img/apps/cocktail.png"
                   alt="Cocktail Searching App"
                 />
                 <p class="latest__card--text">Cocktail Searching App</p>
-              </a>
-            </div>
-
-            <div class="latest__card">
-              <a href="apps/100devs-calculator/index.html" target="_blank">
-                <img
-                  class="latest__card--img"
-                  src="src/img/apps/Calculator.png"
-                  alt="Calculator App"
-                />
-                <p class="latest__card--text">Simple Calculator App</p>
               </a>
             </div>
 
@@ -224,19 +244,7 @@
             </div>
 
             <div class="latest__card">
-              <a href="/projects/to-do-list/index.html" target="_blank">
-                <img
-                  class="latest__card--img"
-                  src="./src/img/projects/todo-list.png"
-                />
-                <p class="latest__card--text">
-                  To-do app: Check out my latest work-in-progress project!
-                </p>
-              </a>
-            </div>
-
-            <div class="latest__card">
-              <a href="/projects/GB-project/index.html" target="_blank">
+              <a href="https://libfr-gb-project.netlify.app/" target="_blank">
                 <img
                   class="latest__card--img"
                   src="./src/img/projects/GB.png"
@@ -304,11 +312,7 @@
       <div class="container container__cta">
         <h3 class="cta__heading">Get in touch!</h3>
         <p class="cta__text">Let's work together on a project!</p>
-        <form
-          class="cta__form"
-          action="https://formsubmit.co/robertofranco8090@gmail.com"
-          method="post"
-        >
+        <form class="cta__form" netlify>
           <div class="cta__form--items">
             <div class="cta__form--item">
               <label for="full-name">Full Name</label>

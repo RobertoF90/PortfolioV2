@@ -1,4 +1,42 @@
 {
+  "Rick & Morty": {
+    "title": "Rick & Morty Search App",
+    "img": {
+      "src": "src/img/apps/rick-morty.png",
+      "alt": "Rick&Morty"
+    },
+
+    "intro": {
+      "text": "Search for your favorite Rick&Morty character with this simple app! You'll be also able to check out all the episodes in which it appears and bookmark it!",
+      "link": "https://robertofranco-rick-morty-search-app.netlify.app/"
+    },
+
+    "description": {
+      "stack": "HTML, CSS, ReactJS",
+      "version": "0.1"
+    },
+    "implemented": {
+      "feature-one": {
+        "title": "Navigation",
+        "items": ["Dashboard", "Search input", "Pagination"]
+      },
+      "feature-two": {
+        "title": "Bookmarks",
+        "items": ["Bookmark list"]
+      },
+      "feature-three": {
+        "title": "Rick&Morty API",
+        "items": ["https://rickandmortyapi.com/api"]
+      }
+    },
+    "toImplement": {
+      "feature-one": {
+        "title": "Bookmarks",
+        "items": ["Bookmark storing"]
+      }
+    }
+  },
+
   "GB Game": {
     "title": "GB Game",
     "img": {
@@ -8,7 +46,7 @@
 
     "intro": {
       "text": "This is my passion project. My sandbox where I can push my skills to the limit and learn game development skills.",
-      "link": "projects/GB-project/index.html"
+      "link": "https://libfr-gb-project.netlify.app/"
     },
 
     "description": {
@@ -41,6 +79,45 @@
     }
   },
 
+  "NASA-APOD": {
+    "title": "NASA APOD",
+    "img": {
+      "src": "src/img/apps/nasa-apod.png",
+      "alt": "NASA APOD"
+    },
+
+    "intro": {
+      "text": "Check out the Astronomical Picture Of the Day provided by the NASA API!",
+      "link": "https://robertofranco-nasa-apod.netlify.app/"
+    },
+
+    "description": {
+      "stack": "HTML, CSS, JavaScript",
+      "version": "1.0"
+    },
+    "implemented": {
+      "feature-one": {
+        "title": "Search function",
+        "items": ["Search by date"]
+      },
+      "feature-two": {
+        "title": "Description",
+        "items": ["Show or hide description"]
+      },
+      "feature-three": {
+        "title": "NASA API",
+        "items": ["https://api.nasa.gov/planetary/apod"]
+      }
+    },
+
+    "toImplement": {
+      "feature-one": {
+        "title": "Graphic interface",
+        "items": ["Overall improvements"]
+      }
+    }
+  },
+
   "cocktail-app": {
     "title": "Cocktail search app",
     "img": {
@@ -50,7 +127,7 @@
 
     "intro": {
       "text": "Search for your favorite cocktail, get the ingredients and enjoy your home-made refreshment",
-      "link": "apps/cocktail-app/index.html"
+      "link": "https://robertofranco-cocktailapp.netlify.app/"
     },
 
     "description": {
@@ -89,7 +166,7 @@
 
     "intro": {
       "text": "This is my largest front-end project so far. it features ES6 classes, object manipulation and state management.",
-      "link": "projects/to-do-list/index.html"
+      "link": "https://robertofranco-todo-js.netlify.app/"
     },
 
     "description": {
@@ -142,7 +219,7 @@
 
     "intro": {
       "text": "This is a simple and quick project I built for fun and to test my knowledge of asyncronous JavaScript and API data fetching.",
-      "link": "projects/christmas-jokes/index.html"
+      "link": "https://robertofranco-christmas-jokes.netlify.app/"
     },
 
     "description": {

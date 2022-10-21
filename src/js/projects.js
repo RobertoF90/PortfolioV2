@@ -40,6 +40,8 @@ function renderProject(id) {
   zoomedImg.src = project.img.src;
 
   let featuresImplemented = Object.values(project.implemented);
+
+  // Crashes if no value are inserted in "to implement"
   let featuresToImplement = Object.values(project.toImplement);
 
   createLists(featuresImplemented, implementedContainer);

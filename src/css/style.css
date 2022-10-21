@@ -1,29 +1,9 @@
 :root {
   --main: #104ba9;
   --bg: #9ec0f6;
-  --bg-section: #a8c6f7;
   --btn-bg: #84a6dc;
   --btn: #3e68ab;
   --cta: #035ff0;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: 'Lato', sans-serif;
-  color: #333;
-  background-color: #ddd;
-}
-
-main {
 }
 
 /****************/
