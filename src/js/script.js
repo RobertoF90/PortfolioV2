@@ -1,54 +1,53 @@
 //////////////////////////////
 // Smooth scrolling
 
-const ctaBtn = document.querySelector('.btn--cta');
-const toTopBtn = document.querySelector('.go-to-top');
+const ctaBtn = document.querySelector(".btn--cta");
+const toTopBtn = document.querySelector(".go-to-top");
 
-ctaBtn.addEventListener('click', scrollCta);
-toTopBtn.addEventListener('click', scrollTop);
+ctaBtn.addEventListener("click", scrollCta);
+toTopBtn.addEventListener("click", scrollTop);
 
 function scrollCta(e) {
   e.preventDefault();
   document
-    .querySelector('.section__cta')
-    .scrollIntoView({ behavior: 'smooth' });
-  toTopBtn.classList.remove('hidden');
+    .querySelector(".section__cta")
+    .scrollIntoView({ behavior: "smooth" });
+  toTopBtn.classList.remove("hidden");
 }
 
 function scrollTop(e) {
   e.preventDefault();
-  document.querySelector('body').scrollIntoView({ behavior: 'smooth' });
-  toTopBtn.classList.add('hidden');
+  document.querySelector("body").scrollIntoView({ behavior: "smooth" });
 }
 
 // Home animation
 
-const latestCards = document.querySelectorAll('.latest__card');
-const latestCardText = document.querySelector('.latest__card--text');
+const latestCards = document.querySelectorAll(".latest__card");
+const latestCardText = document.querySelector(".latest__card--text");
 
 latestCards.forEach((el) => {
-  el.addEventListener('mouseover', (e) => {
-    e.target.parentElement.lastElementChild.classList.add('visible');
+  el.addEventListener("mouseover", (e) => {
+    e.target.parentElement.lastElementChild.classList.add("visible");
   });
 });
 
 latestCards.forEach((el) => {
-  el.addEventListener('mouseout', (e) => {
-    e.target.parentElement.lastElementChild.classList.remove('visible');
+  el.addEventListener("mouseout", (e) => {
+    e.target.parentElement.lastElementChild.classList.remove("visible");
   });
 });
 
 // SECTIONS NAVIGATION
 
-const navLinks = document.querySelectorAll('.nav__btn');
-const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll(".nav__btn");
+const sections = document.querySelectorAll(".section");
 
 navLinks.forEach((el) => {
-  el.addEventListener('click', navigation);
+  el.addEventListener("click", navigation);
 });
 
 function navigation(e) {
-  if (e.target.dataset.id === 'cta') {
+  if (e.target.dataset.id === "cta") {
     return;
   }
 
@@ -57,15 +56,25 @@ function navigation(e) {
   });
 
   sections.forEach((s) => {
-    s.classList.add('hidden');
+    s.classList.add("hidden");
   });
 
   navLinks.forEach((l) => {
-    l.classList.remove('active');
+    l.classList.remove("active");
   });
 
-  e.target.classList.add('active');
-  sec[0].classList.remove('hidden');
+  e.target.classList.add("active");
+  sec[0].classList.remove("hidden");
 
   // showProject();
 }
+
+let pageHeight = window.innerHeight;
+
+window.addEventListener("scroll", (e) => {
+  if (visualViewport.pageTop > 350) {
+    toTopBtn.classList.remove("hidden");
+  } else {
+    toTopBtn.classList.add("hidden");
+  }
+});
