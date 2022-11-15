@@ -37,14 +37,20 @@ body {
   align-items: center;
   justify-content: center;
 
-  background-color: #3e68ab;
+  background-color: var(--cta);
   border: none;
   color: #fff;
 
   border-radius: 50%;
-  font-size: 4.8rem;
-  width: 8rem;
-  height: 8rem;
+  font-size: 4rem;
+  width: 7rem;
+  height: 7rem;
+
+  transition: all 0.2s;
+}
+
+.go-to-top:hover {
+  transform: scale(1.15);
 }
 
 /*------------------*/
