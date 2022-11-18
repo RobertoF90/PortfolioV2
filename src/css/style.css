@@ -44,8 +44,6 @@
 /****************/
 
 .home__container {
-  margin: 2rem;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -63,30 +61,32 @@
 .home__text-box {
   color: #333;
 
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+
   width: 35vw;
 }
 
-.text-box__name {
+.text-box__heading--primary {
   font-size: 6.4rem;
   font-weight: 700;
   letter-spacing: 1.8px;
 }
 
-.text-box__heading {
+.text-box__heading--secondary {
   font-size: 5.2rem;
   font-weight: 500;
   line-height: 1.6;
-  margin-bottom: 5.2rem;
 }
 
 .text-box__para {
   font-size: 3.6rem;
   line-height: 1.5;
-  margin-bottom: 5.2rem;
 }
 
 .social-icons {
-  margin: 2rem 0;
   display: flex;
   justify-content: space-evenly;
 }
@@ -95,17 +95,11 @@
   height: 6rem;
 }
 
-.home__heading {
-  text-align: center;
-  font-size: 5.2rem;
-}
-
-.home__icons:first-of-type {
+/* .home__icons:first-of-type {
   margin-top: 3.2rem;
-}
+} */
 
 .home__icons {
-  margin: 4rem;
   display: flex;
   justify-content: center;
   gap: 4.2rem;
@@ -113,8 +107,6 @@
 }
 
 .work__cards {
-  margin: 4.8rem 0;
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
@@ -124,7 +116,7 @@
 
 .latest__card {
   position: relative;
-  margin: 3rem 0;
+  margin: 1.5rem 0;
 
   display: flex;
   flex-direction: column;
@@ -184,35 +176,22 @@ a img {
   height: 100%;
 }
 
-/* SECTION */
-
-.section {
-  animation: appear 0.5s;
-  transition: all 0.5s;
-}
-
-.section__heading {
-  text-align: center;
-  font-size: 4.8rem;
-  margin-bottom: 2rem;
-}
-
 /****************/
 /* CTA */
 /****************/
 
-.section__cta {
+/* .section__cta {
   margin-bottom: 6rem;
-}
+} */
 
 .container__cta {
   max-width: 90rem;
   text-align: center;
 }
-
+/* 
 .cta__heading {
   font-size: 6.4rem;
-}
+} */
 
 .cta__text {
   font-size: 5.2rem;
@@ -271,24 +250,6 @@ a img {
   justify-content: center;
 }
 
-.nodejs {
-  grid-template-columns: 60fr 40fr;
-}
-
-.container__cards {
-  margin: 0 4rem;
-}
-
-.card__general {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.card__img {
-  width: 100%;
-}
-
 /****************/
 /* FOOTER */
 /****************/
@@ -299,7 +260,7 @@ a img {
   font-size: 3.2rem;
 
   box-shadow: 0 -1px 5px #888;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
