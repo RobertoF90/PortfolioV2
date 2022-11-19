@@ -64,9 +64,11 @@ function navigation(e) {
   });
 
   e.target.classList.add("active");
-  sec[0].classList.remove("hidden");
 
-  // showProject();
+  sec.forEach((s) => {
+    s.classList.remove("hidden");
+
+  })
 }
 
 let pageHeight = window.innerHeight;
