@@ -14,7 +14,7 @@ const toImplementContainer = document.querySelector(
   '.to-implement-features__lists'
 );
 
-console.log(projectLink);
+// console.log(projectLink);
 
 let projects = [];
 let project;
