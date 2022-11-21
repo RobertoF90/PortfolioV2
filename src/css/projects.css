@@ -6,13 +6,11 @@
   display: grid;
   grid-template-columns: 75fr 15fr;
 
-
   /* border-top: 1px solid #aaa; */
   border-bottom: 1px solid #aaa;
 
   animation: appear 0.5s;
   transition: all 0.5s;
-
 }
 /* 
 .container__projects--showcase {
@@ -22,7 +20,7 @@
 .project__showcase--title {
   text-align: center;
   font-size: 6.4rem;
-  
+
   padding-top: 2rem;
 }
 

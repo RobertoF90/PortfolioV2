@@ -97,6 +97,29 @@
     gap: 3.2rem;
     width: 110%;
   }
+
+  /* PROJECTS */
+
+  .container__projects {
+    grid-template-columns: 70fr 30fr;
+  }
+
+  .showcase__project {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3.2rem;
+  }
+
+  .implemented-features__lists,
+  .to-implement-features__lists {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 680px) {
@@ -160,6 +183,11 @@
     gap: 2rem;
   }
 
+  /* PROJECTS */
+
+  .container__projects {
+    grid-template-columns: 70fr 30fr;
+  }
   /* html {
     font-size: 17.5%;
   } */
