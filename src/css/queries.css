@@ -112,13 +112,30 @@
     font-size: 3.2rem;
   }
 
+  .project__showcase--title {
+    text-align: center;
+    font-size: 4.2rem;
+
+    padding: 2rem;
+  }
+
   .implemented-features__lists,
   .to-implement-features__lists {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 
-    padding: 2rem;
+    padding: 2rem 0;
+  }
+
+  h3 {
+    font-size: 3.2rem;
+  }
+
+  .feature__list--item {
+    list-style: none;
+    padding: 0.5rem 0;
+    font-size: 2.4rem;
   }
 }
 
@@ -185,9 +202,9 @@
 
   /* PROJECTS */
 
-  .container__projects {
+  /* .container__projects {
     grid-template-columns: 70fr 30fr;
-  }
+  } */
   /* html {
     font-size: 17.5%;
   } */
