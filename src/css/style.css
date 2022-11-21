@@ -44,17 +44,33 @@
 /****************/
 
 .home__container {
+  width: 80rem;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+}
+
+.header__box--top {
+  display: flex;
+  align-items: center;
+
+  gap: 3rem;
+}
+
+.header__box--bottom {
+  display: flex;
+  padding: 4rem;
 }
 
 .home__img-box {
-  max-width: 17.5vw;
+  max-width: 25rem;
 }
 
 .img-box__img {
-  box-shadow: #383f49 3px 3px 3px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+
   width: 100%;
 }
 
@@ -89,6 +105,7 @@
 .social-icons {
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 .social-icon {
@@ -107,11 +124,20 @@
 }
 
 .work__cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
 
   align-items: center;
   justify-items: center;
+}
+
+.latest {
+  display: flex;
+
+  gap: 4rem;
+
+  align-items: center;
+  width: 90rem;
 }
 
 .latest__card {
@@ -119,18 +145,35 @@
   margin: 1.5rem 0;
 
   display: flex;
-  flex-direction: column;
 
-  width: 30vw;
+  width: 60%;
+}
+
+.latest__card--title {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.latest__card--description {
+  width: 40%;
+
+  text-align: center;
+
+  font-size: 2.6rem;
+  padding: 1.5rem 0;
+
+  line-height: 1.5;
 }
 
 .latest__card::after {
   animation: disappear 0.5s;
 }
 
-a img {
+.latest__card img {
   border: none;
   vertical-align: top;
+
+  border-radius: 16px;
 }
 
 .latest__card--text {
@@ -150,6 +193,9 @@ a img {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
 }
 
 .visible {
@@ -157,6 +203,9 @@ a img {
   transition: all 0.5s;
   opacity: 1;
   height: 45%;
+
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
 }
 
 @keyframes appear {
