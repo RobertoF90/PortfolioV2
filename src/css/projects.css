@@ -6,16 +6,11 @@
   display: grid;
   grid-template-columns: 75fr 15fr;
 
-  /* border-top: 1px solid #aaa; */
   border-bottom: 1px solid #aaa;
 
   animation: appear 0.5s;
   transition: all 0.5s;
 }
-/* 
-.container__projects--showcase {
-  margin: 0 1rem;
-} */
 
 .project__showcase--title {
   text-align: center;
@@ -31,7 +26,7 @@
   column-gap: 4rem;
 
   align-items: center;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
 }
 
 .project__img--zoomed {
@@ -60,6 +55,11 @@
 
 .project__intro span {
   font-weight: 700;
+}
+
+.project__intro--stack,
+.project__intro--version {
+  font-size: 2.4rem;
 }
 
 .project__intro p {
