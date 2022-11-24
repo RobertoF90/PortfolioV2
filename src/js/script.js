@@ -93,12 +93,12 @@ darkModeBtn.addEventListener("click", () => {
 const checkDarkMode = function () {
   if ([...darkModeBtn.classList].includes("active")) {
     darkModeBtn.firstElementChild.src = "./src/img/icons/dark-mode/sun.png";
-    darkModeBtn.style.backgroundColor = "rgb(255, 255, 255)";
+    // darkModeBtn.style.backgroundColor = "rgb(255, 255, 255)";
 
     darkModeBtn.classList.remove("active");
   } else {
     darkModeBtn.firstElementChild.src = "./src/img/icons/dark-mode/moon.png";
-    darkModeBtn.style.backgroundColor = "rgb(13, 71, 125)";
+    // darkModeBtn.style.backgroundColor = "rgb(13, 71, 125)";
     darkModeBtn.classList.add("active");
   }
 };

@@ -35,7 +35,7 @@
 
   .btn--cta:link,
   .btn--cta:visited {
-    color: var(--main-light);
+    color: var(--cta);
   }
 
   .copyright {
@@ -43,11 +43,13 @@
   }
 
   .btn--darkmode {
-    background-color: rgb(13, 71, 125);
+    background-color: #fff;
   }
 
   .btn--darkmode img {
     height: 4rem;
+
+    filter: invert(0%);
   }
 
   /* PROJECTS */

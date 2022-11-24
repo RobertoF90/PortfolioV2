@@ -123,7 +123,7 @@ body {
 .btn--cta:link,
 .btn--cta:visited {
   padding: 0.5rem 1rem;
-  color: var(--main);
+  color: var(--cta);
   transition: all 0.3s;
 }
 
@@ -167,6 +167,7 @@ body {
   border: none;
   height: 5rem;
   width: 5rem;
+  background-color: var(--cta);
 
   color: #333;
 
@@ -177,4 +178,6 @@ body {
 
 .btn--darkmode img {
   height: 3rem;
+
+  filter: invert(100%);
 }
