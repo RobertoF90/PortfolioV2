@@ -165,14 +165,16 @@ body {
 
   text-decoration: none;
   border: none;
-  padding: 1rem;
+  height: 5rem;
+  width: 5rem;
+
   color: #333;
 
-  border-radius: 12px;
+  border-radius: 50%;
 
   transition: all 0.3s;
 }
 
 .btn--darkmode img {
-  height: 2.2rem;
+  height: 3rem;
 }

@@ -82,6 +82,25 @@ window.addEventListener("scroll", (e) => {
 
 // DARKMODE
 
-document.querySelector(".btn--darkmode").addEventListener("click", () => {
+const darkModeBtn = document.querySelector(".btn--darkmode");
+
+darkModeBtn.addEventListener("click", () => {
   document.styleSheets[4].disabled = !document.styleSheets[4].disabled;
+
+  checkDarkMode();
 });
+
+const checkDarkMode = function () {
+  if ([...darkModeBtn.classList].includes("active")) {
+    darkModeBtn.firstElementChild.src = "./src/img/icons/dark-mode/sun.png";
+    darkModeBtn.style.backgroundColor = "rgb(255, 255, 255)";
+
+    darkModeBtn.classList.remove("active");
+  } else {
+    darkModeBtn.firstElementChild.src = "./src/img/icons/dark-mode/moon.png";
+    darkModeBtn.style.backgroundColor = "rgb(13, 71, 125)";
+    darkModeBtn.classList.add("active");
+  }
+};
+
+checkDarkMode();
