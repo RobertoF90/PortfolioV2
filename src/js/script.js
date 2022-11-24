@@ -67,8 +67,7 @@ function navigation(e) {
 
   sec.forEach((s) => {
     s.classList.remove("hidden");
-
-  })
+  });
 }
 
 let pageHeight = window.innerHeight;
@@ -79,4 +78,10 @@ window.addEventListener("scroll", (e) => {
   } else {
     toTopBtn.classList.add("hidden");
   }
+});
+
+// DARKMODE
+
+document.querySelector(".btn--darkmode").addEventListener("click", () => {
+  document.styleSheets[4].disabled = !document.styleSheets[4].disabled;
 });

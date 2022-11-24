@@ -1,12 +1,3 @@
-:root {
-  --main: #104ba9;
-  --bg: #9ec0f6;
-  --bg-section: #a8c6f7;
-  --btn-bg: #84a6dc;
-  --btn: #3e68ab;
-  --cta: #035ff0;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -19,7 +10,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  color: #333;
+  color: var(--dark-grey);
   background-color: #ddd;
 }
 
@@ -114,7 +105,6 @@ body {
   justify-content: center;
 
   margin: 0 1.5rem;
-  /* padding: 0 0.5rem; */
   text-decoration: none;
   text-transform: uppercase;
   color: #333;
@@ -166,4 +156,23 @@ body {
   cursor: pointer;
   background-color: #fff;
   color: var(--main);
+}
+
+.btn--darkmode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  border: none;
+  padding: 1rem;
+  color: #333;
+
+  border-radius: 12px;
+
+  transition: all 0.3s;
+}
+
+.btn--darkmode img {
+  height: 2.2rem;
 }

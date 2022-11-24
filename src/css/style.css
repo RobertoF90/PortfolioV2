@@ -1,18 +1,23 @@
 :root {
   --main: #104ba9;
+  --main-light: #2471ec;
   --bg: #9ec0f6;
+  --bg-section: #a8c6f7;
   --btn-bg: #84a6dc;
   --btn: #3e68ab;
   --cta: #035ff0;
+
+  --dark-grey: #333;
+
+  --light-grey: #ddd;
+  --white: #fff;
+
+  --shadow-light: #888;
 }
 
 /****************/
 /* HEADER */
 /****************/
-
-.header {
-  /* height: 80vh; */
-}
 
 /* NAVIGATION */
 
@@ -25,7 +30,7 @@
   font-size: 3.2rem;
   font-weight: 700;
 
-  box-shadow: 0 1px 5px #888;
+  box-shadow: 0 1px 5px var(--shadow-light);
 }
 
 .nav__links {
@@ -54,14 +59,15 @@
 .header__box--top {
   display: flex;
   align-items: center;
-
   gap: 3rem;
 }
 
 .header__box--bottom {
   display: flex;
   flex-direction: column;
-  padding: 4rem;
+  padding: 3rem;
+
+  text-align: justify;
 }
 
 .home__img-box {
@@ -69,21 +75,18 @@
 }
 
 .img-box__img {
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
   border-radius: 50%;
 
   width: 100%;
 }
 
 .home__text-box {
-  color: #333;
-
+  color: var(--dark-grey);
   display: flex;
   flex-direction: column;
-
-  gap: 2rem;
-
   width: 35vw;
+  gap: 1.2rem;
 }
 
 .text-box__heading--primary {
@@ -95,7 +98,7 @@
 }
 
 .text-box__heading--secondary {
-  font-size: 4.8rem;
+  font-size: 2.8rem;
   text-align: center;
   font-weight: 500;
   line-height: 1.6;
@@ -120,7 +123,7 @@
   display: flex;
   justify-content: center;
   gap: 4.2rem;
-  height: 10rem;
+  height: 8rem;
 }
 
 .work__cards {
@@ -133,10 +136,9 @@
 
 .latest {
   display: flex;
-
+  align-items: center;
   gap: 4rem;
 
-  align-items: center;
   width: 90rem;
 }
 
@@ -151,7 +153,7 @@
 
 .latest__card--title {
   margin-bottom: 1rem;
-  font-size: 3rem;
+  font-size: 3.2rem;
 }
 
 .latest__card--description {
@@ -159,7 +161,7 @@
 
   text-align: center;
 
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   padding: 1.5rem 0;
 
   line-height: 1.5;
@@ -180,7 +182,7 @@
   padding: 0.2rem 1rem;
   font-size: 2.8rem;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -300,7 +302,7 @@
 
   font-size: 3.2rem;
 
-  box-shadow: 0 -1px 5px #888;
+  box-shadow: 0 -1px 5px var(--shadow-light);
 
   display: flex;
   align-items: center;
@@ -309,7 +311,7 @@
 }
 
 .copyright {
-  color: rgba(85, 85, 85, 0.7);
+  color: var(--dark-grey);
 }
 
 .social-links {

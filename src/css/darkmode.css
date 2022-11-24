@@ -1,0 +1,50 @@
+/* :root {
+  --main: #104ba9;
+  --bg: #9ec0f6;
+  --bg-section: #a8c6f7;
+  --btn-bg: #84a6dc;
+  --btn: #3e68ab;
+  --cta: #035ff0;
+
+  --light-grey: #222;
+} */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #ddd;
+    background-color: var(--dark-grey);
+  }
+
+  .home__text-box {
+    color: var(--light-grey);
+  }
+
+  .social-icon {
+    filter: invert(100%);
+  }
+
+  .btn:link,
+  .btn:visited {
+    color: var(--light-grey);
+  }
+
+  .btn:hover,
+  .btn:active {
+    color: #fff;
+  }
+
+  .btn--cta:link,
+  .btn--cta:visited {
+    color: var(--main-light);
+  }
+
+  .copyright {
+    color: var(--light-grey);
+  }
+
+  /* PROJECTS */
+
+  .project__intro--link {
+    color: var(--main-light);
+  }
+}
