@@ -85,7 +85,8 @@ window.addEventListener("scroll", (e) => {
 const darkModeBtn = document.querySelector(".btn--darkmode");
 
 darkModeBtn.addEventListener("click", () => {
-  document.styleSheets[4].disabled = !document.styleSheets[4].disabled;
+  // console.log(document.styleSheets);
+  document.styleSheets[5].disabled = !document.styleSheets[5].disabled;
 
   checkDarkMode();
 });
