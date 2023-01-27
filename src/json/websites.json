@@ -1,0 +1,60 @@
+{
+  "Filomena": {
+    "title": "Freelance Copywriter Portfolio",
+    "img": {
+      "src": "src/img/websites/filomena-landing.png",
+      "alt": "Cuisine Restaurant"
+    },
+
+    "intro": {
+      "text": "Freelance Copywriter Portfolio",
+      "link": "filomenalocantore.netlify.app/"
+    },
+
+    "description": {
+      "stack": "HTML, CSS",
+      "version": "1.0"
+    },
+    "implemented": {
+      "feature-one": {
+        "title": "Responsiveness",
+        "items": ["Desktop/Mobile Responsive"]
+      }
+    },
+    "toImplement": {
+      "feature-one": {
+        "title": "",
+        "items": [""]
+      }
+    }
+  },
+  "Cuisine Restaurant": {
+    "title": "Cuisine Restaurant",
+    "img": {
+      "src": "src/img/websites/cuisine.png",
+      "alt": "Cuisine Restaurant"
+    },
+
+    "intro": {
+      "text": "Landing page for restaurants",
+      "link": "https://robertofranco-cuisine-restaurant.netlify.app/"
+    },
+
+    "description": {
+      "stack": "HTML, CSS",
+      "version": "1.0"
+    },
+    "implemented": {
+      "feature-one": {
+        "title": "Responsiveness",
+        "items": ["Responsive"]
+      }
+    },
+    "toImplement": {
+      "feature-one": {
+        "title": "Animations",
+        "items": ["Add animations"]
+      }
+    }
+  }
+}

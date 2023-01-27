@@ -48,7 +48,7 @@
 /****************/
 
 .home__container {
-  width: 80rem;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +58,7 @@
 .header__box--top {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 12rem;
 }
 
 .header__box--bottom {
@@ -66,7 +66,7 @@
   flex-direction: column;
   padding: 3rem;
 
-  text-align: justify;
+  text-align: center;
 }
 
 .home__img-box {
@@ -108,14 +108,35 @@
   line-height: 1.5;
 }
 
+.paragraph--cta {
+  padding: 1rem 0;
+
+  font-size: 3.6rem;
+
+  transition: all 0.2s;
+}
+
+.paragraph--cta:hover {
+  padding: 1rem 0;
+
+  transform: scale(1.03);
+}
+
 .social-icons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 12rem;
   width: 100%;
 }
 
 .social-icon {
   height: 6rem;
+
+  transition: all 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
 }
 
 .home__icons {

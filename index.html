@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="src/css/darkmode.css" />
 
     <script defer src="src/js/script.js"></script>
-    <script defer src="src/js/projects.js"></script>
+
+    <script defer src="src/js/project.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,7 +40,10 @@
         </div>
         <ul class="nav__links">
           <li class="nav__link">
-            <a class="nav__btn btn" data-id="projects" href="#"> Projects </a>
+            <a class="nav__btn btn" data-id="websites" href="#"> Websites </a>
+          </li>
+          <li class="nav__link">
+            <a class="nav__btn btn" data-id="projects" href="#"> Web Apps </a>
           </li>
           <li class="nav__link">
             <a class="nav__btn btn btn--cta" data-id="cta" href="#">
@@ -65,7 +69,6 @@
               <h2 class="text-box__heading--secondary">
                 Full-Stack Developer | Game Developer
               </h2>
-            
             </div>
 
             <div class="home__img-box">
@@ -80,9 +83,11 @@
               applications and videogames.
             </p>
 
-            <p class="text-box__para">
-              I'm open to freelance work! Feel free to get in touch!
-            </p>
+            <a href="#">
+              <p class="text-box__para paragraph--cta">
+                I'm open to freelance work! Feel free to get in touch!
+              </p>
+            </a>
           </div>
           <div class="social-icons">
             <a href="https://github.com/RobertoF90" target="_blank">
@@ -126,7 +131,7 @@
           </div>
         </div>
       </section>
-      <section class="section" data-id="home">
+      <section class="section section__home" data-id="home">
         <div class="skills">
           <h1 class="heading__secondary">Skills</h1>
 
@@ -164,10 +169,31 @@
           </div>
         </div>
       </section>
-      <section class="section" data-id="home">
+      <section class="section section__home" data-id="home">
         <div class="latest__work">
           <h1 class="heading__secondary">Latest Works</h1>
           <div class="work__cards">
+            <div class="latest">
+              <div class="latest__card">
+                <a href="filomenalocantore.netlify.app/" target="_blank">
+                  <img
+                    class="latest__card--img"
+                    src="src/img/websites/filomena-landing.png"
+                    alt="Cuisine Restaurant"
+                  />
+                  <p class="latest__card--text">
+                    Freelance Copywriter Portfolio
+                  </p>
+                </a>
+              </div>
+              <div class="latest__card--description">
+                <h4 class="latest__card--title">
+                  Freelance Copywriter Portfolio
+                </h4>
+                <p>Freelance Copywriter Portfolio</p>
+              </div>
+            </div>
+
             <div class="latest">
               <div class="latest__card">
                 <a
@@ -194,25 +220,6 @@
 
             <div class="latest">
               <div class="latest__card">
-                <a
-                  href="https://robertofranco-cuisine-restaurant.netlify.app/"
-                  target="_blank"
-                >
-                  <img
-                    class="latest__card--img"
-                    src="src/img/websites/cuisine restaurant.png"
-                    alt="Cuisine Restaurant"
-                  />
-                  <p class="latest__card--text">Cuisine Restaurant website</p>
-                </a>
-              </div>
-              <div class="latest__card--description">
-                <h4 class="latest__card--title">Cuisine Restaurant</h4>
-                <p>Landing page for the Cuisine Restaurant</p>
-              </div>
-            </div>
-            <div class="latest">
-              <div class="latest__card">
                 <a href="https://libfr-gb-project.netlify.app/" target="_blank">
                   <img
                     class="latest__card--img"
@@ -232,59 +239,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="section section__projects hidden" data-id="projects">
-        <div class="container__projects">
-          <div class="container__projects--showcase">
-            <h2 class="project__showcase--title">Project Title</h2>
-
-            <div class="showcase__project">
-              <div class="project__intro">
-                <p class="project__intro--text">HELLO I'm the project</p>
-                <div>
-                  <a class="project__intro--link" href="#">Link to Project</a>
-                </div>
-                <div>
-                  <div class="bold">Stack:</div>
-                  <p class="project__intro--stack">
-                    HTML, HTML5 Canvas, CSS, JavaScript
-                  </p>
-                </div>
-                <div>
-                  <div class="bold">Version:</div>
-                  <p class="project__intro--version">0.1</p>
-                </div>
-              </div>
-
-              <div class="project__img--zoomed">
-                <img class="zoomed__img" />
-              </div>
-            </div>
-
-            <!-- IMPLEMENTED FEATURES  -->
-
-            <div class="features__container">
-              <h3>Features implemented:</h3>
-              <div class="implemented-features__lists"></div>
-            </div>
-
-            <!-- FEATURES TO IMPLEMENT -->
-
-            <div class="features__container">
-              <h3>Work-in-progress Features:</h3>
-              <div class="to-implement-features__lists"></div>
-            </div>
-
-            <p class="feedback">Do you want to provide any feedback?</p>
-            <p class="feedback">
-              Please feel free to contact me on any social platform or through
-              the form below!
-            </p>
-          </div>
-
-          <div class="project__card-container"></div>
         </div>
       </section>
     </main>
@@ -344,7 +298,7 @@
     </section>
 
     <footer class="footer">
-      <p class="copyright">&copy; 2022 Roberto Franco</p>
+      <p class="copyright">&copy; 2023 Roberto Franco</p>
     </footer>
   </body>
 </html>

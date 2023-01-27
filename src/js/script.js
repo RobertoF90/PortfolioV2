@@ -3,6 +3,9 @@
 
 const ctaBtn = document.querySelector(".btn--cta");
 const toTopBtn = document.querySelector(".go-to-top");
+const ctaParagraph = document
+  .querySelector(".paragraph--cta")
+  .addEventListener("click", scrollCta);
 
 ctaBtn.addEventListener("click", scrollCta);
 toTopBtn.addEventListener("click", scrollTop);
@@ -51,23 +54,20 @@ function navigation(e) {
     return;
   }
 
-  let sec = [...sections].filter((s) => {
-    return s.dataset.id === e.target.dataset.id;
-  });
+  if (e.target.dataset.id === "home") {
+    document.querySelector(".section__projects")?.remove();
+    document
+      .querySelectorAll(".section__home")
+      .forEach((s) => s.classList.remove("hidden"));
+  }
 
-  sections.forEach((s) => {
-    s.classList.add("hidden");
-  });
-
-  navLinks.forEach((l) => {
-    l.classList.remove("active");
-  });
-
-  e.target.classList.add("active");
-
-  sec.forEach((s) => {
-    s.classList.remove("hidden");
-  });
+  if (
+    e.target.dataset.id === "projects" ||
+    e.target.dataset.id === "websites"
+  ) {
+    let projects = new Project();
+    projects.init(e.target.dataset.id);
+  }
 }
 
 let pageHeight = window.innerHeight;
