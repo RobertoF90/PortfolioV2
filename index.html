@@ -10,7 +10,7 @@
     />
     <meta
       name="description"
-      content="Web Developer based in Lecce, Puglia, Italy"
+      content="Full Stack Web Developer based in Lecce, Puglia, Italy"
     />
 
     <link rel="stylesheet" href="src/css/general.css" />
@@ -30,32 +30,63 @@
       rel="stylesheet"
     />
 
-    <title>Roberto Franco | Software Engineer</title>
+    <script
+      src="https://kit.fontawesome.com/9bf5837a99.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Roberto Franco | Full Stack Web Developer</title>
   </head>
   <body>
     <header class="header">
       <nav class="nav">
-        <div class="nav__link nav__link--home">
-          <a href="#" data-id="home" class="nav__btn btn active"> Home </a>
+        <div class="nav__link nav__link--home link">
+          <div data-id="home" class="nav__btn btn active">Home</div>
         </div>
         <ul class="nav__links">
           <li class="nav__link">
-            <a class="nav__btn btn" data-id="websites" href="#"> Websites </a>
+            <div class="nav__btn btn link" data-id="websites">Websites</div>
           </li>
-          <li class="nav__link">
-            <a class="nav__btn btn" data-id="projects" href="#"> Web Apps </a>
+          <li class="nav__link link">
+            <div class="nav__btn btn" data-id="projects">Web Apps</div>
           </li>
-          <li class="nav__link">
-            <a class="nav__btn btn btn--cta" data-id="cta" href="#">
-              Get in touch
-            </a>
+          <li class="nav__link link">
+            <div class="nav__btn btn btn--cta" data-id="cta">Get in touch</div>
           </li>
-          <li class="nav__link">
+          <li class="nav__link link">
             <button class="btn btn--darkmode active">
               <img src="" alt="" />
             </button>
           </li>
         </ul>
+      </nav>
+
+      <nav class="nav--mobile">
+        <div class="nav__link nav__link--home link">
+          <div data-id="home" class="nav__btn btn active">Home</div>
+        </div>
+        <ul class="nav__links">
+          <li class="nav__link link">
+            <button class="btn btn--darkmode active">
+              <img src="" alt="" />
+            </button>
+          </li>
+          <li class="mobile__btn">
+            <i class="fa-solid fa-bars"></i>
+          </li>
+        </ul>
+
+        <div class="mobile__menu">
+          <li class="nav__link">
+            <div class="nav__btn btn link" data-id="websites">Websites</div>
+          </li>
+          <li class="nav__link link">
+            <div class="nav__btn btn" data-id="projects">Web Apps</div>
+          </li>
+          <li class="nav__link link">
+            <div class="nav__btn btn btn--cta" data-id="cta">Get in touch</div>
+          </li>
+        </div>
       </nav>
     </header>
     <main class="main">
@@ -83,11 +114,11 @@
               applications and videogames.
             </p>
 
-            <a href="#">
+            <div class="link">
               <p class="text-box__para paragraph--cta">
                 I'm open to freelance work! Feel free to get in touch!
               </p>
-            </a>
+            </div>
           </div>
           <div class="social-icons">
             <a href="https://github.com/RobertoF90" target="_blank">
@@ -131,44 +162,7 @@
           </div>
         </div>
       </section>
-      <section class="section section__home" data-id="home">
-        <div class="skills">
-          <h1 class="heading__secondary">Skills</h1>
 
-          <div class="home__icons">
-            <img
-              title="HTML5"
-              class="home__icons--icon"
-              src="src/img/icons/html-5.svg"
-            />
-            <img
-              title="CSS3"
-              class="home__icons--icon"
-              src="src/img/icons/css-3.svg"
-            />
-            <img
-              title="JavaScript"
-              class="home__icons--icon"
-              src="src/img/icons/javascript.svg"
-            />
-            <img
-              title="ReactJS"
-              class="home__icons--icon"
-              src="src/img/icons/react.svg"
-            />
-            <img
-              title="NodeJS"
-              class="home__icons--icon"
-              src="src/img/icons/nodejs-icon.svg"
-            />
-            <img
-              title="MongoDB"
-              class="home__icons--icon"
-              src="src/img/icons/mongodb.svg"
-            />
-          </div>
-        </div>
-      </section>
       <section class="section section__home" data-id="home">
         <div class="latest__work">
           <h1 class="heading__secondary">Latest Works</h1>

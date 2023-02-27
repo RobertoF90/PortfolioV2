@@ -28,7 +28,7 @@ class Project {
           <div class="project__intro">
             <p class="project__intro--text">${this.project.intro.text}</p>
             <div>
-              <a class="project__intro--link" href="${this.project.intro.link}">Visit Project</a>
+              <a class="project__intro--link" href="${this.project.intro.link}" target="_blank">Visit Project</a>
             </div>
             <div>
               <div class="bold">Stack:</div>

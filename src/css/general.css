@@ -19,6 +19,14 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
 .heading__secondary {
   text-align: center;
   font-size: 5.2rem;
@@ -111,7 +119,6 @@ a {
 
   margin: 0 1.5rem;
   text-decoration: none;
-  text-transform: uppercase;
   color: #333;
   text-align: center;
 

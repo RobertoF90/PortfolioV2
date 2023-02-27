@@ -23,6 +23,16 @@ function scrollTop(e) {
   document.querySelector("body").scrollIntoView({ behavior: "smooth" });
 }
 
+let pageHeight = window.innerHeight;
+
+window.addEventListener("scroll", (e) => {
+  if (visualViewport.pageTop > 350) {
+    toTopBtn.classList.remove("hidden");
+  } else {
+    toTopBtn.classList.add("hidden");
+  }
+});
+
 // Home animation
 
 const latestCards = document.querySelectorAll(".latest__card");
@@ -50,6 +60,7 @@ navLinks.forEach((el) => {
 });
 
 function navigation(e) {
+  document.querySelector(".mobile__menu").classList.remove("active");
   if (e.target.dataset.id === "cta") {
     return;
   }
@@ -69,16 +80,6 @@ function navigation(e) {
     projects.init(e.target.dataset.id);
   }
 }
-
-let pageHeight = window.innerHeight;
-
-window.addEventListener("scroll", (e) => {
-  if (visualViewport.pageTop > 350) {
-    toTopBtn.classList.remove("hidden");
-  } else {
-    toTopBtn.classList.add("hidden");
-  }
-});
 
 // DARKMODE
 
@@ -107,3 +108,13 @@ const checkDarkMode = function () {
 };
 
 checkDarkMode();
+
+// MOBILE MENU
+
+const mobileMenuBtn = document.querySelector(".mobile__btn");
+
+const mobileMenu = function () {
+  document.querySelector(".mobile__menu").classList.toggle("active");
+};
+
+mobileMenuBtn.addEventListener("click", mobileMenu);

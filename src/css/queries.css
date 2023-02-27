@@ -126,8 +126,71 @@
 }
 
 @media (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+
+  .nav--mobile {
+    position: relative;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    font-size: 3.2rem;
+    font-weight: 700;
+
+    box-shadow: 0 1px 5px var(--shadow-light);
+  }
+
+  .mobile__btn {
+    display: flex;
+  }
+
+  .mobile__menu {
+    position: absolute;
+    top: 105%;
+    right: 1.5%;
+
+    display: none;
+    flex-direction: column;
+    gap: 3rem;
+
+    list-style: none;
+    padding: 3rem 10rem 3rem 2rem;
+
+    background-color: #818181;
+
+    border-radius: 12px;
+
+    height: 0;
+    width: 0;
+
+    transition: all 0.2s;
+  }
+
+  .mobile__menu.active {
+    display: flex;
+
+    height: auto;
+    width: auto;
+  }
+
+  .nav__links {
+    display: flex;
+    align-items: center;
+  }
+
   .home__icons {
     gap: 2rem;
+  }
+
+  .work__cards {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-items: center;
   }
 
   .latest {
