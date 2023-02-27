@@ -1,13 +1,14 @@
 //////////////////////////////
 // Smooth scrolling
 
-const ctaBtn = document.querySelector(".btn--cta");
+const ctaBtn = document.querySelectorAll(".btn--cta");
 const toTopBtn = document.querySelector(".go-to-top");
 const ctaParagraph = document
   .querySelector(".paragraph--cta")
   .addEventListener("click", scrollCta);
 
-ctaBtn.addEventListener("click", scrollCta);
+ctaBtn.forEach((b) => b.addEventListener("click", scrollCta));
+
 toTopBtn.addEventListener("click", scrollTop);
 
 function scrollCta(e) {
@@ -83,28 +84,32 @@ function navigation(e) {
 
 // DARKMODE
 
-const darkModeBtn = document.querySelector(".btn--darkmode");
+const darkModeBtn = document.querySelectorAll(".btn--darkmode");
 
-darkModeBtn.addEventListener("click", () => {
-  const dark = [...document.styleSheets].filter((s) => {
-    return s.href?.split("/").includes("darkmode.css");
+darkModeBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const dark = [...document.styleSheets].filter((s) => {
+      return s.href?.split("/").includes("darkmode.css");
+    });
+    dark[0].disabled = !dark[0].disabled;
+
+    checkDarkMode();
   });
-  dark[0].disabled = !dark[0].disabled;
-
-  checkDarkMode();
 });
 
 const checkDarkMode = function () {
-  if ([...darkModeBtn.classList].includes("active")) {
-    darkModeBtn.firstElementChild.src = "./src/img/icons/dark-mode/sun.png";
-    // darkModeBtn.style.backgroundColor = "rgb(255, 255, 255)";
+  darkModeBtn.forEach((btn) => {
+    if ([...btn.classList].includes("active")) {
+      btn.firstElementChild.src = "./src/img/icons/dark-mode/sun.png";
+      // btn.style.backgroundColor = "rgb(255, 255, 255)";
 
-    darkModeBtn.classList.remove("active");
-  } else {
-    darkModeBtn.firstElementChild.src = "./src/img/icons/dark-mode/moon.png";
-    // darkModeBtn.style.backgroundColor = "rgb(13, 71, 125)";
-    darkModeBtn.classList.add("active");
-  }
+      btn.classList.remove("active");
+    } else {
+      btn.firstElementChild.src = "./src/img/icons/dark-mode/moon.png";
+      // btn.style.backgroundColor = "rgb(13, 71, 125)";
+      btn.classList.add("active");
+    }
+  });
 };
 
 checkDarkMode();

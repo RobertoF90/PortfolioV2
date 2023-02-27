@@ -132,7 +132,7 @@
 
   .nav--mobile {
     position: relative;
-    padding: 1.6rem;
+    padding: 1.6rem 3rem;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -159,7 +159,7 @@
     list-style: none;
     padding: 3rem 10rem 3rem 2rem;
 
-    background-color: #818181;
+    background-color: #bbb;
 
     border-radius: 12px;
 

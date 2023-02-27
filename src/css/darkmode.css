@@ -19,6 +19,10 @@
     color: var(--light-grey);
   }
 
+  .mobile__menu {
+    background-color: #818181;
+  }
+
   .social-icon {
     filter: invert(100%);
   }
