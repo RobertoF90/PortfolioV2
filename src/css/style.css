@@ -27,7 +27,7 @@
   justify-content: right;
   align-items: center;
 
-  font-size: 3.2rem;
+  font-size: 2rem;
   font-weight: 700;
 
   box-shadow: 0 1px 5px var(--shadow-light);
@@ -78,7 +78,7 @@
 }
 
 .home__img-box {
-  max-width: 25rem;
+  max-width: 15rem;
 }
 
 .img-box__img {
@@ -97,7 +97,7 @@
 }
 
 .text-box__heading--primary {
-  font-size: 6.4rem;
+  font-size: 3.6rem;
   text-align: center;
 
   font-weight: 700;
@@ -105,21 +105,21 @@
 }
 
 .text-box__heading--secondary {
-  font-size: 2.8rem;
+  font-size: 2rem;
   text-align: center;
   font-weight: 500;
   line-height: 1.6;
 }
 
 .text-box__para {
-  font-size: 2.8rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
 .paragraph--cta {
   padding: 1rem 0;
 
-  font-size: 3.6rem;
+  font-size: 2.8rem;
 
   transition: all 0.2s;
 }
@@ -133,12 +133,12 @@
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 12rem;
+  gap: 6rem;
   width: 100%;
 }
 
 .social-icon {
-  height: 6rem;
+  height: 3rem;
 
   transition: all 0.2s;
 }
@@ -160,8 +160,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  align-items: center;
   justify-items: center;
+  padding: 0 20%;
 }
 
 .latest {
@@ -169,7 +169,7 @@
   flex-direction: column;
   align-items: center;
 
-  margin: 1.5rem;
+  padding: 1rem 0;
 }
 
 .latest__card {
@@ -182,7 +182,7 @@
 
 .latest__card--title {
   margin-bottom: 1rem;
-  font-size: 3.2rem;
+  font-size: 2.2rem;
 }
 
 .latest__card--description {
@@ -190,7 +190,7 @@
 
   text-align: center;
 
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   padding: 1.5rem 0;
 
   line-height: 1.5;
@@ -209,7 +209,7 @@
 
 .latest__card--text {
   padding: 0.2rem 1rem;
-  font-size: 2.8rem;
+  font-size: 1.6rem;
   text-align: center;
   color: var(--white);
   position: absolute;
@@ -260,13 +260,17 @@
 /* CTA */
 /****************/
 
+.section__cta {
+  margin-bottom: 3rem;
+}
+
 .container__cta {
   max-width: 90rem;
   text-align: center;
 }
 
 .cta__text {
-  font-size: 5.2rem;
+  font-size: 3.6rem;
 }
 
 .cta__form {
@@ -277,7 +281,7 @@
   gap: 3.2rem;
   flex-wrap: wrap;
 
-  font-size: 3.6rem;
+  font-size: 2rem;
 }
 
 .cta__form--items {
@@ -292,13 +296,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 66%;
+  width: 50%;
 }
 
 .cta__form--item input {
   border: none;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .form--textarea {
@@ -327,9 +331,9 @@
 /****************/
 
 .footer {
-  padding: 1.6rem;
+  padding: 1rem;
 
-  font-size: 3.2rem;
+  font-size: 1.8rem;
 
   box-shadow: 0 -1px 5px var(--shadow-light);
 

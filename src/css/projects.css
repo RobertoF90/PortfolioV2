@@ -14,7 +14,7 @@
 
 .project__showcase--title {
   text-align: center;
-  font-size: 6.4rem;
+  font-size: 4.2rem;
 
   padding-top: 2rem;
 }
@@ -26,7 +26,7 @@
   column-gap: 4rem;
 
   align-items: center;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 
 .project__img--zoomed {
@@ -59,7 +59,7 @@
 
 .project__intro--stack,
 .project__intro--version {
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 .project__intro p {
@@ -116,7 +116,7 @@
 }
 
 h3 {
-  font-size: 4.2rem;
+  font-size: 2.8rem;
 }
 
 .feature {
@@ -125,7 +125,7 @@ h3 {
 
 .feature__title {
   font-weight: 700;
-  font-size: 3.6rem;
+  font-size: 2.2rem;
 }
 
 .feature__list {
@@ -135,13 +135,13 @@ h3 {
 .feature__list--item {
   list-style: none;
   padding: 0.5rem 0;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
 }
 
 .feedback {
   margin: 1rem 0;
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 2rem;
 }
 
 .feedback:last-of-type {

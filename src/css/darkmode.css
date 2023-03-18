@@ -51,7 +51,7 @@
   }
 
   .btn--darkmode img {
-    height: 4rem;
+    height: 2.5rem;
 
     filter: invert(0%);
   }

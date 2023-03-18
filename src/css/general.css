@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   color: var(--dark-grey);
   background-color: #ddd;
 }
@@ -29,13 +29,13 @@ ul {
 
 .heading__secondary {
   text-align: center;
-  font-size: 5.2rem;
+  font-size: 3.6rem;
 
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .section {
-  margin: 6rem 0;
+  margin: 3rem 0;
 
   animation: appear 0.5s;
   transition: all 0.5s;
@@ -77,9 +77,9 @@ ul {
   color: #fff;
 
   border-radius: 50%;
-  font-size: 4rem;
-  width: 7rem;
-  height: 7rem;
+  font-size: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
 
   transition: all 0.2s;
 }
@@ -166,7 +166,7 @@ ul {
 .form--btn:hover,
 .form--btn:active {
   cursor: pointer;
-  background-color: #fff;
+  background-color: var(--cta);
   color: var(--main);
 }
 
@@ -177,8 +177,8 @@ ul {
 
   text-decoration: none;
   border: none;
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
   background-color: var(--cta);
 
   color: #333;
