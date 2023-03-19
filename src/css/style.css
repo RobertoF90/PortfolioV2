@@ -56,7 +56,6 @@
 /****************/
 
 .home__container {
-  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,6 +70,7 @@
 
 .header__box--bottom {
   display: flex;
+  align-items: center;
   flex-direction: column;
   padding: 3rem;
 
@@ -92,7 +92,6 @@
   color: var(--dark-grey);
   display: flex;
   flex-direction: column;
-  width: 35vw;
   gap: 1.2rem;
 }
 
@@ -112,6 +111,7 @@
 }
 
 .text-box__para {
+  width: 65%;
   font-size: 2rem;
   line-height: 1.5;
 }
@@ -126,7 +126,7 @@
 
 .paragraph--cta:hover {
   padding: 1rem 0;
-
+  cursor: pointer;
   transform: scale(1.03);
 }
 
